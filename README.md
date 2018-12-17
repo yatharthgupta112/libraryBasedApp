@@ -53,7 +53,7 @@ allprojects {
 
 
 	dependencies {
-	        implementation 'com.github.yatharthgupta112:library:Tag'
+	         implementation 'com.github.yatharthgupta112:library:18dc4cc87e'
 	}
 
 ```
