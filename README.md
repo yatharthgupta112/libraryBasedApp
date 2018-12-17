@@ -25,7 +25,7 @@ If you have an existing app module with all the code you want to reuse, you can 
    ```
    apply plugin: 'com.android.application'
 ```
-	  -Change it to the following:
+     - Change it to the following:
 ```
 			apply plugin: 'com.android.library'
 ```
@@ -35,6 +35,27 @@ That's it. The entire structure of the module remains the same, but it now opera
 
 When you want to build the AAR file, select the library module in the Project window and then click Build > Build APK.
 
+How to use
+---
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+	
+```
+ 
+ 
+ ```
+
+
+	dependencies {
+	        implementation 'com.github.yatharthgupta112:library:Tag'
+	}
+
+```
 ---
 
 References
