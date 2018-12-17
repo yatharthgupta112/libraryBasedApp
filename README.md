@@ -24,7 +24,7 @@ If you have an existing app module with all the code you want to reuse, you can 
    3. At the top of the file, you should see the following:
    ```
    apply plugin: 'com.android.application'
-``
+```
 	  -Change it to the following:
 ```
 			apply plugin: 'com.android.library'
