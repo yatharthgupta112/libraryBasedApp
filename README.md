@@ -62,6 +62,6 @@ allprojects {
 References
 ---
 - Converted library using [link](https://developer.android.com/studio/projects/android-library).
-- Uploaded Library ugin [youtube video] (https://www.youtube.com/watch?v=RYiZZprUNJw).
+- Uploaded Library uging https://www.youtube.com/watch?v=RYiZZprUNJw.
 
  	
