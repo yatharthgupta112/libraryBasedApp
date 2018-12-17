@@ -23,12 +23,11 @@ If you have an existing app module with all the code you want to reuse, you can 
    2. Delete the line for the applicationId. Only an Android app module can define this.
    3. At the top of the file, you should see the following:
    ```
-   apply plugin: 'com.android.application'
-```
+			apply plugin: 'com.android.application'
 
-      - Change it to the following:
+      ** Change it to the following: **
 
-```
+
 			apply plugin: 'com.android.library'
 ```
    4. Save the file and click File > Sync Project with Gradle Files.
