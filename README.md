@@ -23,10 +23,11 @@ If you have an existing app module with all the code you want to reuse, you can 
    2. Delete the line for the applicationId. Only an Android app module can define this.
    3. At the top of the file, you should see the following:
    ```
-   apply plugin: 'com.android.application'
-``
-	  -Change it to the following:
-```
+			apply plugin: 'com.android.application'
+
+       Change it to the following:
+
+
 			apply plugin: 'com.android.library'
 ```
    4. Save the file and click File > Sync Project with Gradle Files.
@@ -35,11 +36,32 @@ That's it. The entire structure of the module remains the same, but it now opera
 
 When you want to build the AAR file, select the library module in the Project window and then click Build > Build APK.
 
+How to use
+---
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+	
+```
+ 
+ 
+ ```
+
+
+	dependencies {
+	         implementation 'com.github.yatharthgupta112:library:18dc4cc87e'
+	}
+
+```
 ---
 
 References
 ---
 - Converted library using [link](https://developer.android.com/studio/projects/android-library).
-- Uploaded Library ugin [youtube video] (https://www.youtube.com/watch?v=RYiZZprUNJw).
+- Uploaded Library uging https://www.youtube.com/watch?v=RYiZZprUNJw.
 
  	
